@@ -1,0 +1,13 @@
+Ride Number,Date,Lat,Long,Race Name,Named Location,Description,Who was there,Picture Name,Picture Location URL,"Ride Type (Ride, Race, Bachelor)"
+,9/1/2016,38.985589,-104.627177,,Parents House,,Matthew and Victoria,trials,https://s3.amazonaws.com/hardenduropictures/trials.jpg,Ride
+,11/26/2016,38.57068,-105.014113,,"Penrose, CO",,,smithPenrose,https://s3.amazonaws.com/hardenduropictures/smithPenrose.jpg,Ride
+,12/25/2016,38.885968,-106.458289,,Taylor Park,,,darrellTaylorPark,https://s3.amazonaws.com/hardenduropictures/darrellTaylorPark.jpg,Ride
+,12/30/2016,50.995717,-113.978695,Red Bull Rocks and Logs,Calgary,,,rocksAndLogs2017,https://s3.amazonaws.com/hardenduropictures/rocksAndLogs2017.jpg,Race
+,2/13/2017,46.808851,-119.906051,,Mattawa,,,mattawa2016,https://s3.amazonaws.com/hardenduropictures/mattawa2016.jpg,Ride
+,5/21/2017,47.394541,-115.937571,,Wallace,,,wallace2017,https://s3.amazonaws.com/hardenduropictures/wallace2017.jpg,Ride
+,5/30/2017,35.139675,-85.61054,TKO 2017,Trials Training Center,,,tko2017,https://s3.amazonaws.com/hardenduropictures/tko2017.jpg,Race
+,6/26/2017,46.563623,-116.121708,,"Orofino, ID",,,johnsonMillXC,https://s3.amazonaws.com/hardenduropictures/johnsonMillXC.jpg,Race
+,8/16/2017,46.66801,-121.605535,Golden Spike Hare Scramble NMA Series,"Packwood, WA",,,goldenSpike2017,https://s3.amazonaws.com/hardenduropictures/goldenSpike2017.jpg,Race
+,9/3/2017,48.378824,-122.162709,,Walker Valley,,,WalkerValley2017A,https://s3.amazonaws.com/hardenduropictures/walkerValley2017A.jpg,Ride
+,11/22/2017,44.638819,-124.06729,,"Newport, OR",,,beachBraap,https://s3.amazonaws.com/hardenduropictures/beachBraap.jpg,Ride
+,11/24/2017,37.02924,-113.415388,,"St George, UT",,,stGeorgeChristmas2016,https://s3.amazonaws.com/hardenduropictures/stGeorgeChristmas2016.jpg,Ride

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+    <h1>Some Text</h1>
+    <script>
+
+//https://www.youtube.com/watch?v=ZZncFax8yNY
+    let attendeesArray = [];
+    let currentWinner = "test";
+    let allWinners[];
+    let fileUploaded = false;
+<h1>Some Text</h1>
+
+      displayWinner();
+      function closeModal(id) {
+        let modal = document.getElementById(id);
+        modal.style.display = "none";
+      }
+
+      function displayWinner(){
+        $('#winners-name).html(currentWinner)');
+
+      }
+
+      function getAsText(fileToRead){
+        let reader = new FileReader ();
+
+        reader.readAsText(fileToRead);
+
+        reader.onload = loadHandler;
+        reader.onerror errorHandler;
+
+      }
+
+      function handleFiles(file){
+        if(window.FileReader) {
+          getAsText(files[0]);
+          fileUploaded = true;
+        }else {
+          alert('FileReader is not supported for this browser');
+        }
+
+      }
+
+      function loadHandler (event){
+        let csv event.target.result;
+        processData(csv);
+      }
+
+      function errorHandler(event){
+        if(event.target.errorHandler.name == "NotReadablleError"){
+          alert('Cannot read file.');
+        }
+      }
+
+      function processData(csv){
+        let allTextLines = csv.split(/\r\n|\n/);
+
+        for(let i = 0; i < allTextLines.length; i++){
+          let row = allTextLines[i].split(';');
+          let col = [];
+
+          for (let j = 0; j< row.length; j++){
+            col.push(row[j]);
+          }
+
+          attendeesArray.push(col);
+        }
+
+      }
+
+      function randomizeWinner(){
+
+      }
+*/
+
+//https://www.youtube.com/watch?v=Zxf1mnP5zcw
+
+      function initMap(){
+
+        //Icon List Race, Ride, Bachelor
+
+
+        var options = {
+          zoom : 8,
+          center : {lat:38.885968, lng:-106}
+        }
+
+        var map = new
+        google.maps.Map(document.getElementById('map'), options);
+
+        addMarker({
+          coords:{lat:38.985589, lng:-104.627177},
+          iconImage: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+        });
+
+        addMarker({
+          coords:{lat:38.57068, lng:-105.014113},
+          iconImage: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+          content: '<h1>11</h1>'
+        });
+
+        addMarker({
+          coords:{lat:38.885968, lng:-106.458289},
+          iconImage: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+        });
+
+
+
+        //Add Marker function
+        function addMarker(props){
+
+          var marker = new google.maps.Marker({
+            position: props.coords,
+            map: map,
+          //  icon : props.iconImage
+
+          });
+
+          //Check for custom icon
+          if(props.iconImage){
+            marker.setIcon(props.iconImage)
+          }
+
+          //Check for content
+          if(props.content){
+            var infoWindow = new google.maps.InfoWindow({
+              content : '<h1>Check it out</h1>'
+            });
+
+            marker.addListener('click', function(){
+              infoWindow.open(map, marker);
+            });
+
+          }
+        }
+    }
+
+
+
+/*
+
+        var marker = new google.maps.Marker({
+          position: {lat:42.002, lng:-71.001},
+          map: map,
+          icon : 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+        });
+
+
+*/
+
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5y-3bRDHp4biEIwpYAaWV_pyuSV-3qtg&callback=initMap">
+    </script>
+  </body>
+</html>
